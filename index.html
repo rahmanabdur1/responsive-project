@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive design</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap">
+    <script src="https://kit.fontawesome.com/d954b53a02.js" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+            margin: 0 auto;
+            max-width: 900px;
+            font-family: 'poppins',sans-serif;
+            
+        }
+        .big-player{
+            display: flex;
+            background-color: black;
+        }
+        .big-player .half-width{
+            width: 50%;
+        }
+        .half-width{
+            margin-left: 27px;
+            color: white;
+        }
+        .half-width img{
+            width: 100%;
+        }
+        .btn{
+            color: wheat;
+            text-decoration: none;
+            background-color: red;
+            padding: 5px;
+        }
+    /*mobile devices */
+        @media screen and  (max-width: 576px){
+            .big-player{
+                flex-direction: column;
+            }
+            .big-player{
+                border: 2px;
+                margin-left: 9px;
+                margin-right: 16px;
+            }
+            .big-player .half-width{
+                width: 94%;
+
+            }
+            
+        }
+
+    
+
+    
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="big-player">
+            <div class="half-width">
+                <h1>the Gretest <br>show on the earth</h1>
+                <p>conyray to popular belief,loream ipsum is not simple<br>random</p>
+                <button class="btn">Watch live  <i class="fa-solid fa-greater-than"></i></button>
+            </div>
+<div class="half-width">
+    <img src="img/cr77.jpg">
+    </div>
+</div>
+        </div>
+    
+</body>
+</html>
